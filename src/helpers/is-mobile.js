@@ -1,0 +1,1 @@
+export const IS_MOBILE = _ => window.screen.width < 480

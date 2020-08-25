@@ -1,0 +1,30 @@
+.fab-link {
+    transition: all .6s cubic-bezier(0.23, 1, 0.320, 1);
+    border-radius: 50%;
+    outline: transparent solid 1px;
+    background: linear-gradient(33deg, #3ad, lightblue, lightskyblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 5vh;
+    color: white;
+}
+
+.fab-link:hover {  
+    animation: pulse-shadow 2.5s infinite ease-out;  
+    box-shadow: 0 0 0 .25em white;
+}
+
+.fab-link:focus {    
+    animation: pulse-shadow 3s infinite ease-in;
+    box-shadow: 0 0 0 .25em white;
+}
+
+@keyframes pulse-shadow {
+    0% { box-shadow: 0 0 0 .25em white; }
+    45% { box-shadow: 0 0 .25em .25em white; }
+    55% { box-shadow: 0 0 1em .5em white; }
+    65% { box-shadow: 0 0 .25em .25em white; }
+    100% { box-shadow: 0 0 0 .25em white;}
+}

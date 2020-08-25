@@ -1,0 +1,41 @@
+.topper {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 5vh;
+    transition: all .6s cubic-bezier(0.22, 1, 0.36, 1);
+    position: fixed;
+    bottom: 2%; 
+    right: 4%;
+    background: linear-gradient(lightblue, lightskyblue);
+    border-radius: 50%;
+    transform: scale(1);
+    outline: transparent solid 1px;
+    color: white;
+}
+
+.topper-hidden {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 5vh;
+    transition: all .6s cubic-bezier(0.22, 1, 0.36, 1);
+    position: fixed;
+    bottom: 2%; 
+    right: -100%;
+    background: linear-gradient(lightblue, lightskyblue);
+    border-radius: 50%;
+    transform: scale(1);
+    outline: transparent solid 1px;
+    color: white;
+}
+
+.topper:hover {
+    transition: all .6s cubic-bezier(0.22, 1, 0.36, 1);
+    transform: scale(1.05);
+    box-shadow: 0 0 1em -.25em black;
+}

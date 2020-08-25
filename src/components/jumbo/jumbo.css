@@ -1,0 +1,60 @@
+.jumbo-chev {
+    animation: float-chev 5s infinite linear;
+    margin-top: 5%;
+}
+
+.jumbo-container {
+    height: 100vh;
+}
+
+.jumbo-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url('../../hi-def-tech-wp-2.jpg');
+    height: 100%;
+    width: 100%;
+    color: #fffa;
+    background-attachment: local;
+    background-position: center -70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 480px) {
+    .jumbo-image {
+        font-size: 1em;
+        font-style: italic;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background: url('../../hi-def-tech-wp-2.jpg');
+        height: 100%;
+        color: #fffa;
+        background-attachment: fixed;
+        background-position: center -200px;
+        background-repeat: no-repeat;
+        background-size: 500%;
+    }
+}
+
+@keyframes float-chev {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-.2em);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(.2em);
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
