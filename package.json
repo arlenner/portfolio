@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "website": "a-ross-lennert.com",
+  "homepage": "https://arlenner.github.io/portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
